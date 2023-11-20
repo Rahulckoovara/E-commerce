@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     color: white;
+    gap:20%
 }
 .links a{
     color: white;

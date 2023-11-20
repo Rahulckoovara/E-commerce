@@ -11,21 +11,49 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 30
+    px;
     margin: 20%;
     
 }
 
+
 .product img{
     width: 300px;
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+    border-radius: 10px;
+
     
 }
-.product:hover{
-    transition: 0.3s ease-in;
-    cursor: pointer;
+.product:hover img {
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+    transform: scale(1.1); /* Increase the scale factor for a more pronounced effect */
+
+
+    /* Apply lifted box shadow on hover */
 }
 
 .shop-title{
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+.addToCartBtn{
+        width: 40%;
+  height: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: linear-gradient(to right, #4cb8e8, #3b83b1); /* Gradient from light blue to a darker shade */
+  color: #fff; /* Text color */
+  font-size: 14px; /* Adjust font size */
+  /* Make text bold */
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+  /* Optional: Add box shadow for a subtle lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .addToCartBtn:hover {
+        background-color: #2980b9; /* Change background color on hover */
+      }
