@@ -1,6 +1,7 @@
 import React from "react";
 import {PRODUCTS} from '../../../products.jsx';
 import Product1 from "./product";
+
 const Shop = () => {
   return (
     <div className="shop">

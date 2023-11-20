@@ -5,6 +5,7 @@ import CartItem from "./cartItem";
 //import Product1 from "../shop/product";
 import { useNavigate } from "react-router-dom";
 import "./cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -26,13 +27,16 @@ const Cart = () => {
       </div>
       {total > 0 ? (
         <div className="checkout">
-          <p>Total ₹:{total}</p>
-          <button onClick={() => navigate("/")}>Continue Shopping</button>
+          <p><b>Total ₹:{total}</b></p>
+          <button className="continuebtn" onClick={() => navigate("/")}>Continue Shopping</button>
         </div>
       ) 
-      : (
-        <h1>Your Cart is Empty</h1>
-      )}
+      : <div>
+        <h1>Your Cart is Empty😕...</h1>
+        <Link to={'/'} style={{textDecoration:'none',fontSize:'20px'}}>Pick up where you left off</Link>
+        
+      
+      </div>}
     </div>
   );
 };

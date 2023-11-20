@@ -5,9 +5,7 @@ export const ShopContext = createContext(null);
 
 
 
-//------------iterating added cart items------------------------------
-
-
+//------------iterating added cart items---------------------------
 
 const getdefaultCart=()=>{
     let cart={}
@@ -18,7 +16,7 @@ const getdefaultCart=()=>{
 };
 
  export const ShopContextProvider = (props) => {
-const[cartItems,setCartItems]=useState({});
+ const[cartItems,setCartItems]=useState({});
 
 
 //---------------------adding to cart------------------
@@ -30,6 +28,11 @@ const addToCart=(itemId)=>{
 const removeFromCart=(itemId)=>{
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}));
 };
+
+const deleteFromCart=(itemId)=>{
+    setCartItems((prev)=>({...prev,[itemId]:0}));
+};
+
 
 const updateCartItems=(amount,itemId)=>{
   setCartItems((prev)=>({...prev, [itemId]:amount}))
@@ -50,7 +53,7 @@ const getTotalAmount=()=>{
 };
 
 //-----------------------assigning to contval------------
-const contextValue={cartItems,addToCart,removeFromCart,updateCartItems,getTotalAmount}
+const contextValue={cartItems,addToCart,removeFromCart,updateCartItems,getTotalAmount,deleteFromCart};
 console.log(cartItems);
 
 
