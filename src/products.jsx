@@ -42,7 +42,7 @@ export const PRODUCTS=[
     },
     {
         id:6,
-        productName:'FUl sleeve',
+        productName:'Full sleeve',
         price:500,
         image:product6
     },{
