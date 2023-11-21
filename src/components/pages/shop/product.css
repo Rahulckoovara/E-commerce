@@ -6,6 +6,7 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fill, 300px);
     
+    
 }
 .product{
     width: 300px;
@@ -15,7 +16,8 @@
     justify-content: center;
     border-radius: 30
     px;
-    margin: 20%;
+    margin: 15%;
+    
     
 }
 
@@ -40,17 +42,18 @@
     
 }
 .addToCartBtn{
+    padding: 10px ;
         width: 40%;
-  height: 80%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+ 
+  
+  
   border: none;
   background: linear-gradient(to right, #4cb8e8, #3b83b1); /* Gradient from light blue to a darker shade */
   color: #fff; /* Text color */
   font-size: 14px; /* Adjust font size */
   /* Make text bold */
   cursor: pointer;
-  border-radius: 5px; /* Add rounded corners */
+ 
   transition: background-color 0.3s ease; /* Smooth transition for background color */
 
   /* Optional: Add box shadow for a subtle lift effect */

@@ -18,8 +18,10 @@ export const Product1 = (props) => {
             <p>₹{price}</p>
          
         </div>
+        <div style={{display:'flex',flexDirection:'row',justifyContent:'center'}}><button className='addToCartBtn'>Buy Now</button>
         <button className="addToCartBtn" onClick={()=>addToCart(id)}>
-          Add to Cart{cartItemAmount>0 &&<>({cartItemAmount}) </>}</button>
+          Add to Cart{cartItemAmount>0 &&<>({cartItemAmount}) </>}</button></div>
+        
       
     </div>
   )
