@@ -19,6 +19,11 @@ const Navbar = () => {
   const toggleDrawer = (isOpen) => {
     setOpen(isOpen);
   };
+
+
+  const handleLinkClick=()=>{
+  setOpen(false);
+  }
   return<div className="navbar">
     <Drawer
           className="drawer"
@@ -36,7 +41,7 @@ const Navbar = () => {
             
               <Link to="/cart" className="list_text">
                
-                <ListItem className="listitem">
+                <ListItem className="listitem" onClick={handleLinkClick}>
                 <ShoppingCart size={25}/>
                   <ListItemText style={{fontSize:'70px'}}  className="list_text" primary=" Cart" />
                 </ListItem>
